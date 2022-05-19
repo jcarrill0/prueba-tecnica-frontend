@@ -65,8 +65,8 @@ window.addEventListener('DOMContentLoaded', () => {
                         birthday: this.user.birthday
                     });
                     this.updateLocalStorage();
-                    this.showAlert('Usuario agregado exitosamente!!');
-                    this.reset(); 
+                    this.clearField();
+                    this.showAlert('Usuario agregado exitosamente!!'); 
                 }
             },
             validateForm: function() {
@@ -105,6 +105,13 @@ window.addEventListener('DOMContentLoaded', () => {
             validateEmail: function (email) {
                 const re = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
                 return re.test(email.toLowerCase());
+            },
+            clearField: function() {
+                this.user.id="",
+                this.user.email="",
+                this.user.first_name="",
+                this.user.last_name="",
+                this.user.birthday=""
             },
             reset: function() {
                 this.$refs.userForm.reset();

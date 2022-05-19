@@ -1,0 +1,35 @@
+.table-responsive {
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+@media (max-width: 30em){
+    .table {
+        width: 100%;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid grey;
+        padding: 1em;
+        margin-bottom: .6em;
+    }
+
+    .table td{
+        display: block;
+        text-align: end ;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+
+}

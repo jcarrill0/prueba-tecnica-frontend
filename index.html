@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs4.min.css">
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@4/bootstrap-4.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
@@ -16,7 +17,7 @@
     </nav>
     <main id="app" class="container-fluid mt-3">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Nuevo Usuario</h4>
@@ -40,13 +41,12 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block">Agregar</button>
                                 <button type="button" @click="reset" class="btn btn-info btn-block btn-sm">Reset</button>
-                                <!-- <input type="reset" class="btn btn-info btn-block" value="Clear"> -->
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-sm-8">
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
